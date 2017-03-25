@@ -2,7 +2,7 @@ package com.cassioconti.flightsearch.core;
 
 public class QueryBuilder {
     public String build(String from, String to, String startDate, String endDate, int numberOfAdults, int maxPriceUsd, String saleCountry){
-        String jsonContent = String.format("{\n" +
+        return String.format("{\n" +
                 "  \"request\": {\n" +
                 "    \"slice\": [\n" +
                 "      {\n" +
@@ -29,6 +29,5 @@ public class QueryBuilder {
                 "    \"refundable\": false\n" +
                 "  }\n" +
                 "}", from, to, startDate, endDate, numberOfAdults, maxPriceUsd, saleCountry);
-        return jsonContent;
     }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ResponseReader {
     private double bestPrice;
-    private ArrayList<FlightOption> flights;
+    private final ArrayList<FlightOption> flights;
 
     public ResponseReader(String responseToRead) {
         this.flights = new ArrayList<>();

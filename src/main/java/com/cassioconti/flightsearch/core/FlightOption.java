@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlightOption {
-    private String saleTotal;
-    private ArrayList<Segment> segments;
+    private final String saleTotal;
+    private final ArrayList<Segment> segments;
 
     public FlightOption(String saleTotal) {
         this.saleTotal = saleTotal;
