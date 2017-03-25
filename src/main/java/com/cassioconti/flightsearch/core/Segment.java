@@ -1,10 +1,10 @@
 package com.cassioconti.flightsearch.core;
 
 public class Segment {
-    private String origin;
-    private String destination;
-    private String departureTime;
-    private String arrivalTime;
+    private final String origin;
+    private final String destination;
+    private final String departureTime;
+    private final String arrivalTime;
 
     public Segment(String origin, String destination, String departureTime, String arrivalTime) {
         this.origin = origin;

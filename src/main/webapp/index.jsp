@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1>Flight seach</h1>
+<h1>Flight search</h1>
   <h3>Best options</h3>
   <table>
     <tr><th>From</th><th>To</th><th>Leave</th><th>Arrives</th><th>Price</th></tr>
