@@ -1,0 +1,22 @@
+table {
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    background: lightslategray;
+}
+
+tr {
+    background: lightgray;
+}
+
+td {
+    padding: 3px;
+    padding-right: 10px;
+}
+
+tr:hover {
+ background: slategray;
+}
