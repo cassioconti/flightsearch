@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cassioconti/flightsearch.svg?branch=master)](https://travis-ci.org/cassioconti/flightsearch)
+
 # Java Server Pages  
 
 ## Requirements  
