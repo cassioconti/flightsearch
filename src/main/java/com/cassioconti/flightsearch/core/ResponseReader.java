@@ -18,6 +18,10 @@ public class ResponseReader {
         JsonObject jsonObject = jsonParser.parse(responseToRead).getAsJsonObject();
         JsonArray tripOptions = jsonObject.getAsJsonObject("trips").getAsJsonArray("tripOption");
 
+        if (tripOptions == null) {
+            return;
+        }
+
         for (int i = 0; i < tripOptions.size(); i++) {
             JsonObject tripOption = tripOptions.get(i).getAsJsonObject();
 

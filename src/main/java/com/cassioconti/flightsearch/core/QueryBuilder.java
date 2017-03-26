@@ -1,6 +1,6 @@
 package com.cassioconti.flightsearch.core;
 
-public class QueryBuilder {
+public class QueryBuilder implements IQueryBuilder {
     public String build(String from, String to, String startDate, String endDate, int numberOfAdults, int maxPriceUsd, String saleCountry){
         return String.format("{\n" +
                 "  \"request\": {\n" +

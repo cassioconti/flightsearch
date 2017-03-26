@@ -1,0 +1,10 @@
+{
+ "kind": "qpxExpress#tripsSearch",
+ "trips": {
+  "kind": "qpxexpress#tripOptions",
+  "requestId": "uVmp3Cm3O8V637Qj50QETo",
+  "data": {
+   "kind": "qpxexpress#data"
+  }
+ }
+}

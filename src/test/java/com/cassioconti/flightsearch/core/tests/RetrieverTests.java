@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class RetrieverTests {
     @Test
@@ -15,10 +16,17 @@ public class RetrieverTests {
         IHttpMethod httpMethodMock = Mockito.mock(IHttpMethod.class);
         IQueryBuilder queryBuilderMock = Mockito.mock(IQueryBuilder.class);
 
-        Retriever retriever = new Retriever(httpMethodMock, queryBuilderMock);
-        retriever.Retrieve();
+        try {
+            String content = new Scanner(Retriever.class.getResourceAsStream("/EmptyContent.txt")).useDelimiter("\\A").next();
+            Mockito.doReturn(content).when(httpMethodMock).doPost(Mockito.anyString());
+        } catch (IOException e) {
+            Assert.fail("Should not trigger exception");
+        }
 
-        Mockito.verify(queryBuilderMock, Mockito.times(1)).build();
+        Retriever retriever = new Retriever(httpMethodMock, queryBuilderMock);
+        retriever.Retrieve(Mockito.anyString(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString(), Mockito.anyInt(), Mockito.anyInt(), Mockito.anyString());
+
+        Mockito.verify(queryBuilderMock, Mockito.times(1)).build(Mockito.anyString(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString(), Mockito.anyInt(), Mockito.anyInt(), Mockito.anyString());
         Mockito.verifyNoMoreInteractions(queryBuilderMock);
 
         try {
@@ -43,7 +51,7 @@ public class RetrieverTests {
 
         Retriever retriever = new Retriever(httpMethodMock, queryBuilderMock);
         try {
-            retriever.Retrieve();
+            retriever.Retrieve(Mockito.anyString(), Mockito.anyString(), Mockito.anyString(), Mockito.anyString(), Mockito.anyInt(), Mockito.anyInt(), Mockito.anyString());
         } catch (Exception e) {
             Assert.fail("Exception should have being captured");
         }
