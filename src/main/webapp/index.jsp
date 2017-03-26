@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
-<%@ page import="com.cassioconti.flightsearch.core.ResponseReader"%>
-<%@ page import="com.cassioconti.flightsearch.core.Index"%>
+<%@ page import="com.cassioconti.flightsearch.interpreter.ResponseReader"%>
+<%@ page import="com.cassioconti.flightsearch.host.Index"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>

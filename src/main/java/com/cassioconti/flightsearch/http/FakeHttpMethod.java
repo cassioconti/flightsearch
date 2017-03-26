@@ -1,4 +1,4 @@
-package com.cassioconti.flightsearch.core;
+package com.cassioconti.flightsearch.http;
 
 import java.io.IOException;
 import java.util.Scanner;

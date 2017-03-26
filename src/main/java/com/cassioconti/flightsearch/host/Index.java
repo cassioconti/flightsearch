@@ -1,9 +1,8 @@
-package com.cassioconti.flightsearch.core;
+package com.cassioconti.flightsearch.host;
 
-import org.mockito.Mockito;
-
-import java.io.IOException;
-import java.util.Scanner;
+import com.cassioconti.flightsearch.core.QueryBuilder;
+import com.cassioconti.flightsearch.interpreter.ResponseReader;
+import com.cassioconti.flightsearch.http.FakeHttpMethod;
 
 public class Index {
 

@@ -1,4 +1,4 @@
-package com.cassioconti.flightsearch.core;
+package com.cassioconti.flightsearch.interpreter;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

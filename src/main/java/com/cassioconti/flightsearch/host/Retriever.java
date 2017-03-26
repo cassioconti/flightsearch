@@ -1,4 +1,8 @@
-package com.cassioconti.flightsearch.core;
+package com.cassioconti.flightsearch.host;
+
+import com.cassioconti.flightsearch.http.IHttpMethod;
+import com.cassioconti.flightsearch.core.IQueryBuilder;
+import com.cassioconti.flightsearch.interpreter.ResponseReader;
 
 import java.io.IOException;
 import java.util.Scanner;

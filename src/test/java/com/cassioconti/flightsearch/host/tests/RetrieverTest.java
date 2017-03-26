@@ -1,8 +1,8 @@
-package com.cassioconti.flightsearch.core.tests;
+package com.cassioconti.flightsearch.host.tests;
 
-import com.cassioconti.flightsearch.core.IHttpMethod;
+import com.cassioconti.flightsearch.http.IHttpMethod;
 import com.cassioconti.flightsearch.core.IQueryBuilder;
-import com.cassioconti.flightsearch.core.Retriever;
+import com.cassioconti.flightsearch.host.Retriever;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;

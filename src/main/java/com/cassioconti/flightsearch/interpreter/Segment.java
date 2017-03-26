@@ -1,4 +1,4 @@
-package com.cassioconti.flightsearch.core;
+package com.cassioconti.flightsearch.interpreter;
 
 public class Segment {
     private final String origin;

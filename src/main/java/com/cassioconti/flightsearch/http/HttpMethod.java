@@ -1,4 +1,4 @@
-package com.cassioconti.flightsearch.core;
+package com.cassioconti.flightsearch.http;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -26,7 +26,7 @@ public class HttpMethod implements IHttpMethod {
     }
 
     private String getApiKey() {
-        InputStream inputStream = Retriever.class.getResourceAsStream("/ApiKey.txt");
+        InputStream inputStream = HttpMethod.class.getResourceAsStream("/ApiKey.txt");
         return new Scanner(inputStream).next();
     }
 }

@@ -1,7 +1,7 @@
-package com.cassioconti.flightsearch.core.tests;
+package com.cassioconti.flightsearch.interpreter.tests;
 
-import com.cassioconti.flightsearch.core.FlightOption;
-import com.cassioconti.flightsearch.core.ResponseReader;
+import com.cassioconti.flightsearch.interpreter.FlightOption;
+import com.cassioconti.flightsearch.interpreter.ResponseReader;
 import org.junit.Assert;
 import org.junit.Test;
 

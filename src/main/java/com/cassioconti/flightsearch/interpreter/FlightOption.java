@@ -1,4 +1,4 @@
-package com.cassioconti.flightsearch.core;
+package com.cassioconti.flightsearch.interpreter;
 
 import java.util.ArrayList;
 import java.util.List;

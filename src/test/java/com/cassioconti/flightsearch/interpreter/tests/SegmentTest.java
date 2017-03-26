@@ -1,6 +1,6 @@
-package com.cassioconti.flightsearch.core.tests;
+package com.cassioconti.flightsearch.interpreter.tests;
 
-import com.cassioconti.flightsearch.core.Segment;
+import com.cassioconti.flightsearch.interpreter.Segment;
 import org.junit.Assert;
 import org.junit.Test;
 
