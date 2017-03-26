@@ -37,4 +37,12 @@ public class ResponseReaderTests {
             Assert.assertEquals("FLN", flightOption.getSegments().get(flightOption.getSegments().size() - 1).getDestination());
         }
     }
+
+    @Test
+    public void EmptyResult() {
+        String emptyReturn = new Scanner(ResponseReader.class.getResourceAsStream("/EmptyContent.txt")).useDelimiter("\\A").next();
+        ResponseReader responseReader = new ResponseReader(emptyReturn);
+        Assert.assertEquals(0, responseReader.getBestPrice(), 1e-10);
+        Assert.assertEquals(0, responseReader.getFlights().size());
+    }
 }
