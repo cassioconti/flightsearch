@@ -10,7 +10,7 @@ import org.mockito.Mockito;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class RetrieverTests {
+public class RetrieverTest {
     @Test
     public void TestHappyPath() {
         IHttpMethod httpMethodMock = Mockito.mock(IHttpMethod.class);

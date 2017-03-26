@@ -4,7 +4,7 @@ import com.cassioconti.flightsearch.core.Segment;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SegmentTests {
+public class SegmentTest {
     @Test
     public void TestHappyPath1() {
         String origin = "FLN";
