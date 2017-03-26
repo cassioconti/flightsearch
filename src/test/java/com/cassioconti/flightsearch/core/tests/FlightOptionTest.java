@@ -4,7 +4,7 @@ import com.cassioconti.flightsearch.core.FlightOption;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class FlightOptionTests {
+public class FlightOptionTest {
     @Test
     public void TestHappyPath() {
         String tripPrice = "USD720";

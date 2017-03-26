@@ -7,10 +7,10 @@ import org.junit.Test;
 
 import java.util.Scanner;
 
-public class ResponseReaderTests {
+public class ResponseReaderTest {
     @Test
     public void TestHappyPath1() {
-        String responseExample = new Scanner(ResponseReaderTests.class.getResourceAsStream("/JsonResponseExample1.json")).useDelimiter("\\A").next();
+        String responseExample = new Scanner(ResponseReaderTest.class.getResourceAsStream("/JsonResponseExample1.json")).useDelimiter("\\A").next();
 
         ResponseReader responseReader = new ResponseReader(responseExample);
 

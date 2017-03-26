@@ -4,7 +4,7 @@ import com.cassioconti.flightsearch.core.QueryBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class QueryBuilderTests {
+public class QueryBuilderTest {
     @Test
     public void TestHappyPath1() {
         QueryBuilder queryBuilder = new QueryBuilder();
